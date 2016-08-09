@@ -2,11 +2,13 @@
 <html lang="ja">
 	<head>
 		<meta charset="utf-8">
+		<title>Cplus</title>
 		<meta name="keywords" content="HTML,CSS,JavaScript,特殊文字,リファレンス">
 		<meta name="description" content="HTML・CSS等の早見表的リファレンス">
 		<meta name="robots" content="noindex,nofollow">
 		<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css">
 		<link rel="stylesheet" type="text/css" href="top.css">
+
 		<script>
 		var pagetop, glovalmenu, yPos;
 		function yScroll(){
