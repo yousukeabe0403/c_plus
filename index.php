@@ -2,7 +2,7 @@
 <html lang="ja">
 	<head>
 		<meta charset="utf-8">
-		<title>Cplus</title>
+		<title>株式会社Cplus | ウェディングプランについては</title>
 		<meta name="keywords" content="HTML,CSS,JavaScript,特殊文字,リファレンス">
 		<meta name="description" content="HTML・CSS等の早見表的リファレンス">
 		<meta name="robots" content="noindex,nofollow">
