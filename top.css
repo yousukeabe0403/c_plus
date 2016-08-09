@@ -41,9 +41,9 @@
 
 			#glovalmenu ul{
 				display: table;
-			  table-layout: fixed;/*「親要素にtable-layout: fixed;を加える」だけで、子要素の幅を指定しなくても均等に配置されます。*/
-			  text-align: center;
-			  width: 100%;
+			  	table-layout: fixed;/*「親要素にtable-layout: fixed;を加える」だけで、子要素の幅を指定しなくても均等に配置されます。*/
+			  	text-align: center;
+			  	width: 100%;
 				height:100%;
 			}
 
