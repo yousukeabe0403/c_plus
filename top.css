@@ -1,0 +1,460 @@
+
+			html,body{
+				height: 100%;
+				font-family:"BebasNeue", Helvetica,游ゴシック体, "Yu Gothic", YuGothic, "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+			}
+			h1, h2, h3, h4, h5, h6,p,span{
+				color: #2d2d2d;
+		
+				font-weight:100;
+				text-align: center;
+			}
+			#wrap{
+				height: 100%;
+				min-width: 800px;
+			}
+			#pagetop{
+				position: fixed;
+				top: 0px;
+				width:100%;
+				height: 36px;
+				background: rgba(0,102,204,0.8);
+				color: #FFF;
+				font-size: 23px;
+				padding-top: 8px;
+				transition: height 0.3s linear 0s, padding 0.3s linear 0s;
+				overflow:hidden;
+				min-width: 800px;
+			}
+			#pagetop > #glovalmenu{
+				position: absolute;
+				bottom: 0;
+				width: 100%;
+				background: rgba(0,74,149,0.8);
+				height:0;
+				transition: height 0.3s linear 0s;
+				color: #2d2d2d;
+				font-family:"BebasNeue", Helvetica, Arial, sans-serif;
+				font-weight:100;
+				text-align: center;
+			}
+
+			#glovalmenu ul{
+				display: table;
+			  table-layout: fixed;/*「親要素にtable-layout: fixed;を加える」だけで、子要素の幅を指定しなくても均等に配置されます。*/
+			  text-align: center;
+			  width: 100%;
+				height:100%;
+			}
+
+			#glovalmenu ul li{
+				display: table-cell;
+			  vertical-align: middle;
+				color: white;
+			}
+			#glovalmenu ul li:nth-child(odd){
+				background: rgba(255,255,255,0.1);
+			}
+
+			.background-wrap{
+				position:relative;
+				z-index: -1000;
+				width: 100%;
+				height:100%;
+				overflow: hidden;
+				top:0;
+				left:0;
+			}
+
+			#video-bg-elem{
+				position: absolute;
+				top: 0;
+				left: 0;
+				min-width: 100%;
+				min-height: 100%;
+			}
+
+			#mobile-bg-elem{
+				position: absolute;
+				top: 0;
+				left: 0;
+				min-width: 100%;
+				min-height: 100%;
+				/* 画像ファイルの指定 */
+				  background-image: url(video.gif);
+
+				  /* 画像を常に天地左右の中央に配置 */
+				  background-position: center center;
+
+				  /* 画像をタイル状に繰り返し表示しない */
+				  background-repeat: no-repeat;
+
+				  /* コンテンツの高さが画像の高さより大きい時、動かないように固定 */
+				  background-attachment: fixed;
+
+				  /* 表示するコンテナの大きさに基づいて、背景画像を調整 */
+				  background-size: cover;
+
+				  /* 背景画像が読み込まれる前に表示される背景のカラー */
+				  background-color: #464646;
+			}
+
+			.contents{
+				position: absolute;
+				width: 100%;
+				min-height: 100%;
+				z-index: 1000;
+				background-color: rgba(0, 0, 0, 0.5);
+			}
+
+			.contents .bg_videotext{
+				position: absolute;
+				top: 47%;
+				width:100%;
+				margin-top:-57px;
+			}
+
+			#massage01{
+				font-size:70px;
+				color:white;
+				opacity: 0;
+				top:-10px;
+				position: relative;
+			}
+			#massage02{
+				font-size:20px;
+				color:white;
+				text-align: center;
+				opacity: 0;
+				top:10px;
+				position: relative;
+			}
+			#titleTxt01{
+				opacity: 0;
+				padding-top: 60px;
+			}
+			#titleTxt02{
+				opacity: 0;
+			}
+			.detail{
+				position: relative;
+				top:0;
+				left:0;
+			}
+
+			.menu,.aboutus{
+				/*min-height: 350px;*/
+				/*min-width: 1200px;*/
+				/*padding: 50px 0;*/
+				padding: 0;
+				margin:0 auto;
+				text-align: center;
+				position: relative;
+			}
+			.menu{
+				width:90%;
+			}
+			.aboutus{
+				width: 100%;
+				padding:0;
+			}
+
+			.zigzag-border{
+				background:url(zigzag-border.png) repeat-x;
+				height:7px;
+				width: 100%;
+				position: absolute;
+				z-index: -1;
+				left: 0;
+				top:-7px;
+			}
+
+			.zigzag-border-close{
+				background:url(zigzag-border_close.png) repeat-x;
+				height:7px;
+				width: 100%;
+				display: inline-block;
+				position: absolute;
+				z-index: 1;
+				left: 0;
+				top:-1px;
+			}
+
+			.menu ul{
+				display: table;
+			  table-layout: fixed;/*「親要素にtable-layout: fixed;を加える」だけで、子要素の幅を指定しなくても均等に配置されます。*/
+			  text-align: center;
+			  width: 100%;
+				height:100%;
+				margin: 30px 0;
+
+			}
+
+			.menu ul li{
+				display: table-cell;
+			  vertical-align: middle;
+				overflow: hidden;
+				padding: 15px;
+			}
+
+			#titleTxt03,#titleTxt04,#titleTxt05{
+				opacity: 0;
+				position: relative;
+			}
+			#titleTxt03{
+				top:-30px;
+			}
+			#titleTxt04{
+				top:30px;
+			}
+			#titleTxt05{
+				top:-30px;
+			}
+			
+			.menu ul li a{
+				display: block;
+			}
+
+			.menu ul li img{
+				width:100%;
+				height:auto;
+				vertical-align: bottom;
+			}
+
+			.image-card{
+				position:relative;
+
+			}
+
+		.overlay > span{
+			display: block;
+			position: absolute;
+			z-index:2;
+			background:rgba(0,102,204,0.8);
+			backface-visibility: hidden;
+			opacity: 0;
+			transition: opacity 0.35s linear,
+									transform 0.35s linear;
+		}
+
+		.overlay > span:nth-of-type(1){
+			left:0;
+			top:0;
+			width:100%;
+			height:3px;
+			transform-origin: 0 0;/*変形の基準点*/
+			transform:scaleX(0);
+		}
+
+		.overlay > span:nth-of-type(2){
+			right:0;
+			bottom:0;
+			width:100%;
+			height:3px;
+			transform-origin: right bottom;/*変形の基準点*/
+			transform:scaleX(0);
+		}
+
+		.overlay > span:nth-of-type(3){
+			right:0;
+			top:0;
+			width:3px;
+			height:100%;
+			transform-origin: right 0;/*変形の基準点*/
+			transform:scaleY(0);
+		}
+
+		.overlay > span:nth-of-type(4){
+			left:0;
+			bottom:0;
+			width:3px;
+			height:100%;
+			transform-origin: 0 bottom;/*変形の基準点*/
+			transform:scaleY(0);
+		}
+
+		a:hover .image-card .overlay > span{
+			opacity: 1;
+		}
+
+		a:hover .image-card .overlay > span:nth-of-type(1){
+			transform:scaleX(1);
+		}
+
+		a:hover .image-card .overlay > span:nth-of-type(2){
+			transform:scaleX(1);
+		}
+
+		a:hover .image-card .overlay > span:nth-of-type(3){
+			transform:scaleY(1);
+		}
+
+		a:hover .image-card .overlay > span:nth-of-type(4){
+			transform:scaleY(1);
+		}
+
+		.bluebg{
+			position: absolute;
+			background: rgba(0,102,204,0.8);
+			width:100%;
+			height:100%;
+			opacity: 0;
+			transition: opacity 0.35s linear 0.5s;
+		}
+
+		.bluebg .item{
+			display: table;
+			width: 100%;
+			height:100%;
+		}
+		.bluebg .item span{
+			color: white;
+			font-size:40px;
+			display: table-cell;
+			vertical-align: middle;
+			text-align: center;
+		}
+		a:hover .image-card .bluebg{
+			opacity: 1;
+		}
+
+		.aboutus img{
+			width:100%;
+			vertical-align: bottom;
+		}
+
+#loader-bg {
+  display: block;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  background: skyblue;
+  z-index: 100;
+
+}
+#loader {
+  display: block;
+  position: fixed;
+/*  top: 50%;
+  left: 50%;*/
+  width: 100%;
+  height: 100%;
+/*  margin-top: -100px;
+  margin-left: -100px;*/
+  text-align: center;
+  color: black;
+  z-index: 200;
+}
+#cssload-loader {
+/*	position: absolute;
+	margin: auto;
+	left: 0;
+	right: 0;
+	width: 88px;*/
+	width: 100%;
+	height: 100%;
+	display: table;
+}
+.tablecell{
+		width: 100%;
+		display: table-cell;
+		vertical-align: middle;
+}
+#cssload-loader ul {
+	margin: 0;
+	list-style: none;
+	width: 88px;
+	margin: 0 auto;
+	height: 63px;
+	position: relative;
+	padding: 0;
+/*	height: 200px;*/
+	z-index: 9999;
+
+}
+#cssload-loader ul li {
+	position: absolute;
+	width: 2px;
+	height: 0;
+	background-color: rgb(0,0,0);
+	bottom: 0;
+}
+
+
+#cssload-loader li:nth-child(1) {
+	left: 0;
+	animation: cssload-sequence1 1.15s ease infinite 0;
+		-o-animation: cssload-sequence1 1.15s ease infinite 0;
+		-ms-animation: cssload-sequence1 1.15s ease infinite 0;
+		-webkit-animation: cssload-sequence1 1.15s ease infinite 0;
+		-moz-animation: cssload-sequence1 1.15s ease infinite 0;
+}
+#cssload-loader li:nth-child(2) {
+	left: 15px;
+	animation: cssload-sequence2 1.15s ease infinite 0.12s;
+		-o-animation: cssload-sequence2 1.15s ease infinite 0.12s;
+		-ms-animation: cssload-sequence2 1.15s ease infinite 0.12s;
+		-webkit-animation: cssload-sequence2 1.15s ease infinite 0.12s;
+		-moz-animation: cssload-sequence2 1.15s ease infinite 0.12s;
+}
+#cssload-loader li:nth-child(3) {
+	left: 29px;
+	animation: cssload-sequence1 1.15s ease-in-out infinite 0.23s;
+		-o-animation: cssload-sequence1 1.15s ease-in-out infinite 0.23s;
+		-ms-animation: cssload-sequence1 1.15s ease-in-out infinite 0.23s;
+		-webkit-animation: cssload-sequence1 1.15s ease-in-out infinite 0.23s;
+		-moz-animation: cssload-sequence1 1.15s ease-in-out infinite 0.23s;
+}
+#cssload-loader li:nth-child(4) {
+	left: 44px;
+	animation: cssload-sequence2 1.15s ease-in infinite 0.35s;
+		-o-animation: cssload-sequence2 1.15s ease-in infinite 0.35s;
+		-ms-animation: cssload-sequence2 1.15s ease-in infinite 0.35s;
+		-webkit-animation: cssload-sequence2 1.15s ease-in infinite 0.35s;
+		-moz-animation: cssload-sequence2 1.15s ease-in infinite 0.35s;
+}
+#cssload-loader li:nth-child(5) {
+	left: 58px;
+	animation: cssload-sequence1 1.15s ease-in-out infinite 0.46s;
+		-o-animation: cssload-sequence1 1.15s ease-in-out infinite 0.46s;
+		-ms-animation: cssload-sequence1 1.15s ease-in-out infinite 0.46s;
+		-webkit-animation: cssload-sequence1 1.15s ease-in-out infinite 0.46s;
+		-moz-animation: cssload-sequence1 1.15s ease-in-out infinite 0.46s;
+}
+#cssload-loader li:nth-child(6) {
+	left: 73px;
+	animation: cssload-sequence2 1.15s ease infinite 0.58s;
+		-o-animation: cssload-sequence2 1.15s ease infinite 0.58s;
+		-ms-animation: cssload-sequence2 1.15s ease infinite 0.58s;
+		-webkit-animation: cssload-sequence2 1.15s ease infinite 0.58s;
+		-moz-animation: cssload-sequence2 1.15s ease infinite 0.58s;
+}
+
+
+@keyframes cssload-sequence1 {
+	0% {
+		height: 10px;
+	}
+	50% {
+		height: 49px;
+	}
+	100% {
+		height: 10px;
+	}
+}
+
+
+
+@keyframes cssload-sequence2 {
+	0% {
+		height: 19px;
+	}
+	50% {
+		height: 63px;
+	}
+	100% {
+		height: 19px;
+	}
+}
