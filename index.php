@@ -178,10 +178,16 @@
 
 			<div class="aboutus">
 				<img src="image/main_aboutous.jpg">
-
-
 			</div>
+		</div>
 
+		<div class="detail">
+			<div class="service" id="service_menu">
+				<a href="#" id="service_menu01"><img src="image/img02a.png" alt=""></a>
+				<a href="#" id="service_menu02"><img src="image/img02b.png" alt=""></a>
+				<a href="#" id="service_menu03"><img src="image/img02c.png" alt=""></a>
+				<a href="#" id="service_menu04"><img src="image/img02d.png" alt=""></a>
+			</div>
 		</div>
 </div>
 	</body>

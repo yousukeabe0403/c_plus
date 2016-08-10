@@ -25,6 +25,7 @@
 				transition: height 0.3s linear 0s, padding 0.3s linear 0s;
 				overflow:hidden;
 				min-width: 800px;
+				z-index: 888;
 			}
 			#pagetop > #glovalmenu{
 				position: absolute;
@@ -81,7 +82,7 @@
 				min-width: 100%;
 				min-height: 100%;
 				/* 画像ファイルの指定 */
-				  background-image: url(video.gif);
+				  background-image: url(../video.gif);
 
 				  /* 画像を常に天地左右の中央に配置 */
 				  background-position: center center;
@@ -160,7 +161,7 @@
 			}
 
 			.zigzag-border{
-				background:url(zigzag-border.png) repeat-x;
+				background:url(../image/zigzag-border.png) repeat-x;
 				height:7px;
 				width: 100%;
 				position: absolute;
@@ -170,7 +171,7 @@
 			}
 
 			.zigzag-border-close{
-				background:url(zigzag-border_close.png) repeat-x;
+				background:url(../image/zigzag-border_close.png) repeat-x;
 				height:7px;
 				width: 100%;
 				display: inline-block;
@@ -323,6 +324,25 @@
 			vertical-align: bottom;
 		}
 
+		.service{
+			position: relative;
+			height: 500px;
+		}
+
+		.service a{
+			position: absolute;
+			top: 0;
+			left:0;
+		}
+
+		.service a img{
+			vertical-align: bottom;
+		}
+		#service_menu{top:-100px; opacity: 0;}
+		#service_menu02,#service_menu03,#service_menu04{
+			opacity: 0;
+		}
+
 #loader-bg {
   display: block;
   position: fixed;
@@ -331,7 +351,7 @@
   top: 0px;
   left: 0px;
   background: skyblue;
-  z-index: 100;
+  z-index: 999;
 
 }
 #loader {
