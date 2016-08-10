@@ -2,7 +2,8 @@
 <html lang="ja">
 	<head>
 		<meta charset="utf-8">
-		<title>株式会社Cplus | ウェディングプランについては</title>
+
+		<title>株式会社Cplus | ウェディングプランご提案します</title>
 		<meta name="keywords" content="Cplusのキーワードが入ります">
 		<meta name="description" content="Cplusの説明が入ります">
 
