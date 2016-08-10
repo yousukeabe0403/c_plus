@@ -8,7 +8,7 @@
 
 		<meta name="robots" content="noindex,nofollow">
 		<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css">
-		<link rel="stylesheet" type="text/css" href="top.css">
+		<link rel="stylesheet" type="text/css" href="css/top.css">
 
 		<script>
 		var pagetop, glovalmenu, yPos;
