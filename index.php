@@ -10,25 +10,8 @@
 		<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css">
 		<link rel="stylesheet" type="text/css" href="css/top.css">
 
-		<script>
-		var pagetop, glovalmenu, yPos;
-		function yScroll(){
-			pagetop = document.getElementById('pagetop');
-			glovalmenu = document.getElementById('glovalmenu');
-			yPos = window.pageYOffset;
-			if(yPos > 150){
-				pagetop.style.height = "120px";
-				pagetop.style.paddingTop = "50px";
-				glovalmenu.style.height = "50px";
 
-			} else {
-				pagetop.style.height = "36px";
-				pagetop.style.paddingTop = "8px";
-				glovalmenu.style.height = "0px";
-			}
-		}
-		window.addEventListener("scroll", yScroll);//スクロールしたら発火。コントロール付属のスクロールバー位置が変更されたときに発火
-		</script>
+
 <!--[if lt IE 9]>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <![endif]-->

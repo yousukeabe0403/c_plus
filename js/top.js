@@ -1,26 +1,46 @@
-	$(function() {
-	  var h = $(window).height();
-	 
-	  $('#wrap').css('display','none');
-	  $('#loader-bg ,#loader').height(h).css('display','block');
-	});
+var pagetop, glovalmenu, yPos;
+function yScroll(){
+	pagetop = document.getElementById('pagetop');
+	glovalmenu = document.getElementById('glovalmenu');
+	yPos = window.pageYOffset;
+	if(yPos > 150){
+		pagetop.style.height = "120px";
+		pagetop.style.paddingTop = "50px";
+		glovalmenu.style.height = "50px";
 
-	jQuery.event.add(window,"load",function() { //全ての読み込みが完了したら実行
-	  $('#loader-bg').delay(900).fadeOut(800);
-	  $('#loader').delay(600).fadeOut(300);
-	  $('#wrap').css('display', 'block');
-	});	
+	} else {
+		pagetop.style.height = "36px";
+		pagetop.style.paddingTop = "8px";
+		glovalmenu.style.height = "0px";
+	}
+}
+window.addEventListener("scroll", yScroll);//スクロールしたら発火。コントロール付属のスクロールバー位置が変更されたときに発火
 
-	$(window).load(function () {
-			$('#massage01').delay(1500).animate({
-					'opacity':'1',
-					'top':'0'
-			},{ duration: 600, easing: 'swing', });
-			$('#massage02').delay(1500).animate({
-					'opacity':'1',
-					'top':'0'
-			},{ duration: 600, easing: 'swing', });
-	});
+
+
+$(function() {
+  var h = $(window).height();
+ 
+  $('#wrap').css('display','none');
+  $('#loader-bg ,#loader').height(h).css('display','block');
+});
+
+jQuery.event.add(window,"load",function() { //全ての読み込みが完了したら実行
+  $('#loader-bg').delay(900).fadeOut(800);
+  $('#loader').delay(600).fadeOut(300);
+  $('#wrap').css('display', 'block');
+});	
+
+$(window).load(function () {
+		$('#massage01').delay(1500).animate({
+				'opacity':'1',
+				'top':'0'
+		},{ duration: 600, easing: 'swing', });
+		$('#massage02').delay(1500).animate({
+				'opacity':'1',
+				'top':'0'
+		},{ duration: 600, easing: 'swing', });
+});
 $(function(){
     $(window).scroll(function () {
         // var ScrTop = $(document).scrollTop();
