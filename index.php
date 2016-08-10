@@ -3,8 +3,9 @@
 	<head>
 		<meta charset="utf-8">
 		<title>株式会社Cplus | ウェディングプランについては</title>
-		<meta name="keywords" content="HTML,CSS,JavaScript,特殊文字,リファレンス">
-		<meta name="description" content="HTML・CSS等の早見表的リファレンス">
+		<meta name="keywords" content="Cplusのキーワードが入ります">
+		<meta name="description" content="Cplusの説明が入ります">
+
 		<meta name="robots" content="noindex,nofollow">
 		<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css">
 		<link rel="stylesheet" type="text/css" href="top.css">
